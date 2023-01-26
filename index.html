@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>mashro3 asma 3omla</title>
+
+        <style>
+           
+           body{
+         font-family:inherit;
+         font-weight:bold;
+         color: black;
+               }
+               .all{
+width:80%;
+margin:auto;
+}
+.head{
+text-align:center;
+margin:10px 0px;
+font-size:20pt;
+}
+input{
+width:100%;
+height:40px;
+outline:none;
+margin:4px 0px;
+background-color:#fbfbe6;
+border-radius:4px;
+padding:4px;
+font-size:20pt;
+color:black;
+text-align: right;
+}
+input:focus{
+background-color:#ffebee;
+transform:scale(1.025);
+}
+.tel input{
+width:40%;
+}
+#tel2{
+    margin-left: 236.5px;
+}
+button{
+width:100%;
+border-radius:6px;
+height:40px;
+background-color:#81d4fa;
+font-size:20pt;
+cursor:pointer;
+transition:0.5s;
+}
+button:hover{
+background-color:#64b5f6;
+letter-spacing:1px;
+}
+table{
+width:100%;
+text-align:center;
+margin:10px 0px;
+font-size:20pt;
+}
+table button{
+border-radius:15px;
+}
+th,td{
+padding:5px;
+}
+#deleteall{
+margin:20px 0px;
+}
+         
+        </style>
+    </head>
+    <body>
+        <div class="all">
+            <div class="head">
+            <h1>بيانات الزبائن</h1>
+            <p>اسماء وعنواين وارقام تليفونات الزبائن</p>
+            </div>
+            <div class="inputs">
+                <input type="text" id="name"  placeholder="اسم الزبون" />
+                <div class="tel">
+                <input type="tel" id="tel1"  placeholder="رقم الموبايل" />
+                <input type="tel" id="tel2"  placeholder="رقم الارضى " />
+                </div>
+                <input type="text" id="anoan" placeholder="العنوان" />
+                <button id="submit">اضافة</button>
+            </div>
+            <div class="output">
+                <div class="searchblock">
+                    <input  type="text" id="search" onkeyup="searchdata(this.value)" placeholder="ابحث" />
+                    </div>
+                    <div id="deleteall">
+                    
+                    </div>
+                    <table>
+                        <tr>
+                        <th>حذف </th>
+                        <th>تعديل  </th>
+                        <th>العنوان </th>
+                        <th>رقم الموبايل</th>
+                        <th>الرقم الارضى</th>
+                        <th>اسم الزبون</th>
+                        <th>تسلسل</th>
+                        </tr>
+                        <tbody id="tbody">
+                            <tr>
+                                <td><button id="delete">حذف</button> </td>
+                                <td><button id="ubdata">تعديل</button>  </td>
+                                <td>56 ونجت </td>
+                                <td>01028779854 </td>
+                                <td>035244600</td>
+                                <td>محمود خالد </td>
+                                <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td><button id="delete">حذف</button> </td>
+                                    <td><button id="ubdata">تعديل</button>  </td>
+                                    <td>56 ونجت </td>
+                                    <td>01028779854 </td>
+                                    <td>035244600</td>
+                                    <td>محمود خالد </td>
+                                    <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button id="delete">حذف</button> </td>
+                                        <td><button id="ubdata">تعديل</button>  </td>
+                                        <td>56 ونجت </td>
+                                        <td>01028779854 </td>
+                                        <td>035244600</td>
+                                        <td>محمود خالد </td>
+                                        <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><button id="delete">حذف</button> </td>
+                                            <td><button id="ubdata">تعديل</button>  </td>
+                                            <td>56 ونجت </td>
+                                            <td>01028779854 </td>
+                                            <td>035244600</td>
+                                            <td>محمود خالد </td>
+                                            <td>1</td>
+                                            </tr>
+                        </tbody>
+                        </table> 
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </body>
+</html>
